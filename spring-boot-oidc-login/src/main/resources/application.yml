@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          demo:
+            client-id: oidcclient
+            client-secret: secret
+            client-name: OIDC Client
+            provider: idp
+            scope: openid
+        provider:
+          idp:
+            issuer-uri: http://localhost:5000
